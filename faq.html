@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  	<title>IGNITE | By Giftkarte</title>
+  	<meta content="" name="description">
+  	<meta content="" name="keywords">
+	<!-- Favicons -->
+  	<link href="assets/img/favicon.png" rel="icon">
+  	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<!-- Main CSS File -->
+  	<link href="assets/css/main.css" rel="stylesheet">
+	<style>
+  		.accordion-button {
+		white-space: nowrap; /* Prevent text from wrapping to the next line */
+		overflow: hidden; /* Hide overflowing text */
+		text-overflow: ellipsis; /* Add ellipsis (...) if text is too long */
+	}
+	/* Remove default arrow */
+	.accordion-button::after {
+		display: none;
+	}
+	/* Style for the Font Awesome icon */
+	.accordion-button .fa {
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		margin-left: auto; /* Push the icon to the end */
+		color: #7636c9; /* Set icon color */
+	}
+	/* Adjust icon styles */
+	.accordion-button:not(.collapsed) .fa {
+		content: "\f068"; /* Font Awesome minus icon */
+	}
+	.accordion-button.collapsed .fa {
+  		content: "\f067"; /* Font Awesome plus icon */
+	}
+	/* Style for the accordion button (header/question) */
+	.accordion-button {
+   		color: #7636c9; /* Set text color for accordion header */
+	}
+	/* Style when accordion button is not collapsed (active state) */
+	.accordion-button:not(.collapsed) {
+  		background-color: #f0ebf8;
+   		/* Adjust background color for active state */
+	}
+	.accordion-body{
+    	color:#04befa;
+	}
+	</style>
+</head>
+<body class="index-page">
+	<header id="header" class="header d-flex align-items-center fixed-top">
+    	<div class="container-fluid container-xl position-relative d-flex align-items-center">
+			<a href="index.html" class="logo d-flex align-items-center me-auto">
+        		<img src="assets/img/logo.png" alt="">
+      		</a>
+			<nav id="navmenu" class="navmenu">
+        		<ul>
+					<li><a href="index.html#hero" class="">Home</a></li>
+					<li><a href="index.html#about">About Ignite</a></li>
+					<li><a href="index.html#features">About GiftKarte</a></li>
+					<li><a href="index.html#services">Features</a></li>
+					<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      		</nav>
+			<a class="btn-getstarted" href="index.html#contact">Contact Us</a>
+		</div>
+  	</header>
+	<main class="main">
+		<!-- Hero Section -->
+    	<section id="hero" class="hero section">
+        	<div class="hero-bg">
+				<img src="assets/img/privacy-bg.jpg" alt="">
+        	</div>
+        	<div class="container text-center">
+            	<div class="container section-title" data-aos="fade-up">
+                	<h2>Frequently Asked Question</h2>
+                	<p data-aos="fade-up" data-aos-delay="100"><span style="color:#04befa">Have Questions?</span> Here you'll find the answers!<br></p>
+                	<img src="assets/img/faq.png" alt="FAQ Image" style="margin-top: 10px; max-width: 100%; height: auto;">
+            	</div>
+				<div class="accordion" id="faqAccordion">
+                	<div class="accordion-item">
+                    	<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Why are employee recognition & rewards important?
+								<i class="fa fa-plus"></i> <!-- Font Awesome icon -->
+							</button>
+                    	</h2>
+                    	<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        	<div class="accordion-body">
+                           		Recognizing & rewarding employees is important as it enhances their morale and engagement. Feeling valued and recognized for their work fosters a sense of motivation and dedication. Consequently, this enhances productivity and job contentment, while simultaneously reducing turnover and absenteeism. 
+                        	</div>
+                    	</div>
+                	</div>
+					<div class="accordion-item">
+                    	<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								How often should you recognize employees?
+								<i class="fa fa-plus"></i>
+							</button>
+                    	</h2>
+                    	<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        	<div class="accordion-body">
+                            	Regular acknowledgment of employees is crucial, its most effective when given immediately, is personalized and made public, consistent appreciation significantly influences employee motivation and morale more than just occasional recognition. It’s essential to recognize employees for their daily efforts, weekly/monthly goals and as well as their outstanding accomplishments. 
+                        	</div>
+                    	</div>
+                	</div>
+                	<div class="accordion-item">
+                    	<h2 class="accordion-header" id="headingThree">
+                        	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            	Who is IGNITE for?
+                            	<i class="fa fa-plus"></i>
+                        	</button>
+                    	</h2>
+                    	<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        	<div class="accordion-body">
+                            	IGNITE is for organizations who identify the power of recognition and wish to improve their company culture, increase employee engagement, motivation, productivity & job satisfaction, reduce turnover and build a workforce that is instrumental for organizational success. 
+                        	</div>
+                    	</div>
+                	</div>
+                	<div class="accordion-item">
+                    	<h2 class="accordion-header" id="headingFour">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								What size of companies is IGNITE build for?
+								<i class="fa fa-plus"></i>
+							</button>
+                    	</h2>
+                    	<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        	<div class="accordion-body">
+                            	Whether you are 25 or 25,000 strong, with IGNITE’s custom options you will get a recognition & rewards platform tailored for your unique needs. 
+                        	</div>
+                    	</div>
+                	</div>
+            	</div>
+			</section><!-- /Hero Section -->
+        </main>
+	<footer id="footer" class="footer position-relative">
+		<div class="container footer-top">
+      		<div class="row gy-4">
+        		<div class="col-lg-4 col-md-6 footer-about">
+					<a href="index.html" class="logo d-flex align-items-center">
+						<img src="assets/img/logo.png" alt="">
+					</a>
+					<div class="footer-contact pt-3">
+						<p>Office # 201, Plot 42-C، Lane # 8, Bukhari Commercial Area Karachi, 75500</p>
+						<p class="mt-3"><strong>Phone:</strong> <span>(021) 38732018</span></p>
+						<p><strong>Email:</strong> <span>help@giftkarte.com </span></p>
+					</div>
+					<div class="social-links d-flex mt-4">
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a>
+						<a href=""><i class="bi bi-linkedin"></i></a>
+					</div>
+        		</div>
+				<div class="col-lg-2 col-md-3 footer-links">
+          			<h4>Ignite</h4>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Ignite</a></li>
+						<li><a href="#">About GiftKarte</a></li>
+						<li><a href="#">Fearures</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-3 footer-links">
+          			<h4>Discover</h4>
+					<ul>
+						<li><a href="faq.html">FAQ</a></li>
+						<li><a href="privacy.html">Privacy Policy</a></li>
+						<li><a href="#">User Terms of Service​</a></li>
+						<li><a href="#">Acceptable Use Policy </a></li>
+					</ul>
+        		</div>
+				<div class="col-lg-4 col-md-12 footer-newsletter footer-links">
+          			<h4>Sign-In</h4>
+					<ul>
+						<li><a href="https://employee.ignite-gk.com/login">User Sign-In</a></li>
+						<li><a href="https://company.ignite-gk.com/login">Company Sign-In</a></li>
+          			</ul>
+				</div>
+			</div>
+    	</div>
+		<div class="container copyright text-center mt-4">
+      		<p>© <span>Copyright</span> <strong class="px-1 sitename">Ignite 2024.</strong><span>All Rights Reserved</span></p>
+      		<div class="credits">
+				Powered by <a href="https://www.giftkarte.com/" target="_blank">GiftKarte</a>
+      		</div>
+    	</div>
+	</footer>
+	<!-- Scroll Top -->
+  	<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+	<!-- Preloader -->
+  	<div id="preloader"></div>
+	<!-- Vendor JS Files -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/php-email-form/validate.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+	<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<!-- Main JS File -->
+  	<script src="assets/js/main.js"></script>
+	<script>
+    // Optional: Ensure the icons toggle correctly
+		document.querySelectorAll('.accordion-button').forEach(button => {
+			button.addEventListener('click', function() {
+				const icon = this.querySelector('.fa');
+				if (this.getAttribute('aria-expanded') === 'true') {
+				icon.classList.remove('fa-plus');
+				icon.classList.add('fa-minus');
+				} else {
+				icon.classList.remove('fa-minus');
+				icon.classList.add('fa-plus');
+				}
+			});
+		});
+ 	</script>
+</body>
+</html>

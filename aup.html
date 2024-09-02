@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>IGNITE | By Giftkarte</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: QuickStart
+  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
+  * Updated: Jun 02 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .container span {
+        color: #04befa;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    /* CSS for banner backgrounds */
+    /* CSS for banner backgrounds with custom shapes */
+    .dos-banner .card-title {
+        background-color: #b8e8a6cd;
+        /* Light green background for Do's */
+        padding: 10px 20px;
+        position: relative;
+        border-radius: 15px 50px 30px 5px;
+        /* Custom shape */
+        color: #ffffff;
+        /* White text color */
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .dos-banner .card-title::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #8cc176;
+        /* Slightly darker green for effect */
+        border-radius: 15px 50px 30px 5px;
+        /* Same custom shape */
+        z-index: -1;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        /* Diagonal cut effect */
+    }
+
+    .donts-banner .card-title {
+        background-color: #f2dede;
+        /* Light red background for Don'ts */
+        padding: 10px 20px;
+        position: relative;
+        border-radius: 50px 15px 5px 30px;
+        /* Custom shape */
+        color: #ffffff;
+        /* White text color */
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .donts-banner .card-title::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #e6bcbc;
+        /* Slightly darker red for effect */
+        border-radius: 50px 15px 5px 30px;
+        /* Same custom shape */
+        z-index: -1;
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+        /* Inverted diagonal cut effect */
+    }
+
+    /* Custom styles for bullet icons */
+    .list-group-item {
+        position: relative;
+        padding-left: 2.5rem;
+    }
+
+    .list-group-item:before {
+        content: "\f118"; /* Default icon for 'Do's' */
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        color: #04befa;
+        font-size: 1.5rem;
+    }
+
+    .dos-banner .list-group-item:before {
+        content: "\f118"; /* Happy face icon */
+        color: #28a745; /* Green color for 'Do's' */
+    }
+
+    .donts-banner .list-group-item:before {
+        content: "\f119"; /* Sad face icon */
+        color: #dc3545; /* Red color for 'Don'ts' */
+    }
+
+    .list-group-item:nth-of-type(1):before {
+        content: "\f118"; /* Happy face for 'Do's' */
+    }
+
+    .list-group-item:nth-of-type(1):before {
+        content: "\f119"; /* Sad face for 'Don'ts' */
+    }
+    .container .row .col-lg-5,
+.container .row .col-lg-2 {
+    text-align: left;
+    font-size: 12.5px;
+}
+
+/* Specific to your Dos and Donts banners */
+.dos-banner .card-body,
+.donts-banner .card-body {
+    text-align: left;
+}
+
+/* Ensure list items are left-aligned */
+.list-group-item {
+    text-align: left;
+    
+}
+
+</style>
+</head>
+
+<body class="index-page">
+	<header id="header" class="header d-flex align-items-center fixed-top">
+    	<div class="container-fluid container-xl position-relative d-flex align-items-center">
+			<a href="index.html" class="logo d-flex align-items-center me-auto">
+        		<img src="assets/img/logo.png" alt="">
+      		</a>
+			<nav id="navmenu" class="navmenu">
+				<ul>
+					<li><a href="index.html#hero" class="">Home</a></li>
+					<li><a href="index.html#about">About Ignite</a></li>
+					<li><a href="index.html#features">About GiftKarte</a></li>
+					<li><a href="index.html#services">Features</a></li>
+					<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+				
+      		</nav>
+	  	</div>
+		<a class="btn-getstarted" href="index.html#contact">Contact Us</a>
+	</div>
+  </header>
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="hero-bg">
+            
+          <img src="assets/img/privacy-bg.jpg" alt="">
+        </div>
+        <div class="container text-center">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Acceptable Use Policy</h2>
+                <p data-aos="fade-up" data-aos-delay="100">This Acceptable Use Policy <span>(“Policy”)</span> sets out a list of acceptable and unacceptable conduct of users on <span>Ignite Recognition & Rewards platform</span>, website &/or mobile application <span>(collectively the “Platform”), developed & operated by ‘GiftKarte Technologies (Pvt.) Limited’ (‘Giftkarte”)</span>. <br></p>
+                <p data-aos="fade-up" data-aos-delay="100">If we believe a violation of the policy is deliberate, repeated or presents a credible risk of harm to other users, our Client, our Platform or any third parties, we may suspend or terminate your access. <br></p>
+                <p data-aos="fade-up" data-aos-delay="100">We may revise/ update this Policy at any time by posting a revised version on our website, without any further notice. It is your responsibility to check on a regular basis to ensure that you are in agreement with it. Your continued use of the Platform will be taken as your consent to the changes that are made.<br></p>
+                <p data-aos="fade-up" data-aos-delay="100">Ignite may analyze information to protect the safety of users, prevent illegal activity and delete content that violates this policy.<br></p>
+            </div>
+         <!-- Do's and Don'ts Section -->
+<div class="container">
+  <div class="row align-items-center">
+
+    <!-- Do's Column -->
+    <div class="col-lg-5" data-aos="fade-right">
+      <div class="card mb-4 dos-banner">
+        <div class="card-body">
+          <h3 class="card-title text-success">Do's</h3>
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item">Comply with all User Terms of Service, including the terms of this Acceptable Use Policy.</li>
+            <li class="list-group-item">Comply with governmental regulations and applicable laws related to intellectual property, data privacy, and other such regulations.</li>
+            <li class="list-group-item"> Maintain confidentiality of your log-in credentials including passwords.</li>
+            <li class="list-group-item">Make sure that your personal information & data associated with your account on the Platform is correct, current and valid.</li>
+            <li class="list-group-item">Notify us if you become aware of or reasonably suspect any unauthorized activity or access involving your account on the Platform.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Column -->
+    <div class="col-lg-2 text-center" data-aos="fade-up">
+      <img src="assets/img/dos-donts.jpg" alt="Do's and Don'ts" class="img-fluid">
+    </div>
+
+    <!-- Don'ts Column -->
+    <div class="col-lg-5" data-aos="fade-left">
+      <div class="card mb-4 donts-banner">
+        <div class="card-body">
+          <h3 class="card-title text-danger">Don'ts</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Share, transfer or otherwise provide access to your account on the Platform to another person or share your log-in credentials at all.</li>
+            <li class="list-group-item"> Post, share or transmit any content that is malicious, defamatory, explicit, derogatory or disparaging against a particular person, religion, caste, creed or nationality.</li>
+            <li class="list-group-item">Post, share or transmit any content that may infringe upon or misappropriate someone else’s trademark, copyright, or other intellectual property.</li>
+            <li class="list-group-item">Post, share or transmit any content that could potentially contain or redirects to a virus, worm, or other harmful component or a technology that unlawfully accesses or downloads content or information stored within the Platform.</li>
+            <li class="list-group-item">Try to reverse engineer, decompile, hack, disable, interfere with, disassemble, modify, copy, translate, or disrupt the features, functionality, integrity, or performance of the Platform.</li>
+            <li class="list-group-item">Try to gain unauthorized access to the Platform or related systems.</li>
+            <li class="list-group-item">Violate publicity or privacy rights or defame others or place any advertisements.</li>
+            <li class="list-group-item">Engage in activity that incites, supports, graphically describes, or encourages self-harm, violence, or hatred against individuals or groups, including violence against animals.</li>
+            <li class="list-group-item">Impersonate any person or entity, including, but not limited to, an employee of ours, an “Administrator”, an “Owner”, or any other Authorized User, or falsely state or otherwise misrepresent your affiliation with a person, organization or entity.</li>
+            <li class="list-group-item">Use contact or other user information obtained from the Platform (including email addresses) to contact other users outside of the Platform without their express permission.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  
+         
+          
+        
+        
+    </section><!-- /Hero Section -->
+   
+  
+
+  
+
+    
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Office # 201, Plot 42-C، Lane # 8, Bukhari Commercial Area Karachi, 75500</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>(021) 38732018</span></p>
+            <p><strong>Email:</strong> <span>help@giftkarte.com </span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Ignite</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Ignite</a></li>
+            <li><a href="#">About GiftKarte</a></li>
+            <li><a href="#">Fearures</a></li>
+          </ul>
+          
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Discover</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="#">User Terms of Service​</a></li>
+            <li><a href="#">Acceptable Use Policy </a></li>
+          </ul>
+        </div>
+
+        
+
+        <div class="col-lg-4 col-md-12 footer-newsletter footer-links">
+          <h4>Sign-In</h4>
+          
+          <ul>
+            <li><a href="https://employee.ignite-gk.com/login">User Sign-In</a></li>
+            <li><a href="https://company.ignite-gk.com/login">Company Sign-In</a></li>
+          </ul>
+         
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Ignite 2024.</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Powered by <a href="https://www.giftkarte.com/" target="_blank">GiftKarte</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
