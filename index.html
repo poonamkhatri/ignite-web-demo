@@ -382,6 +382,17 @@
     </div>
     <div class="preloader-text">Loading...</div>
   </div>
+document.addEventListener("DOMContentLoaded", function () {
+  // Set the timeout duration (in milliseconds)
+  const timeoutDuration = 3000; // 3 seconds
+
+  setTimeout(function () {
+    // Hide the preloader and show the content
+    document.getElementById('preloader').style.display = 'none';
+    document.querySelector('.content').style.display = 'block';
+  }, timeoutDuration);
+});
+
 <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
