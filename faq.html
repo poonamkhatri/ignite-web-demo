@@ -35,13 +35,15 @@
 	/* Style for the Font Awesome icon */
 	.accordion-button .fa {
 		font-family: "Font Awesome 5 Free";
-		font-weight: 900;
+		font-weight: 1000;
+		font-size: 20px;
 		margin-left: auto; /* Push the icon to the end */
 		color: #7636c9; /* Set icon color */
 	}
 	/* Adjust icon styles */
 	.accordion-button:not(.collapsed) .fa {
 		content: "\f068"; /* Font Awesome minus icon */
+		color:#046df8;
 	}
 	.accordion-button.collapsed .fa {
   		content: "\f067"; /* Font Awesome plus icon */
@@ -52,11 +54,13 @@
 	}
 	/* Style when accordion button is not collapsed (active state) */
 	.accordion-button:not(.collapsed) {
-  		background-color: #f0ebf8;
+  		background-color: #eee9f8;
+		color:#046df8;
    		/* Adjust background color for active state */
 	}
 	.accordion-body{
-    	color:#04befa;
+    	color:white;
+		background-color:#2c4087;
 	}
 	</style>
 </head>
@@ -94,7 +98,7 @@
                     	<h2 class="accordion-header" id="headingOne">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 								Why are employee recognition & rewards important?
-								<i class="fa fa-plus"></i> <!-- Font Awesome icon -->
+								<i class="fa fa-plus-circle"></i> <!-- Font Awesome icon -->
 							</button>
                     	</h2>
                     	<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
@@ -107,7 +111,7 @@
                     	<h2 class="accordion-header" id="headingTwo">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 								How often should you recognize employees?
-								<i class="fa fa-plus"></i>
+								<i class="fa fa-plus-circle"></i>
 							</button>
                     	</h2>
                     	<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
@@ -120,7 +124,7 @@
                     	<h2 class="accordion-header" id="headingThree">
                         	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             	Who is IGNITE for?
-                            	<i class="fa fa-plus"></i>
+                            	<i class="fa fa-plus-circle"></i>
                         	</button>
                     	</h2>
                     	<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
@@ -133,7 +137,7 @@
                     	<h2 class="accordion-header" id="headingFour">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 								What size of companies is IGNITE build for?
-								<i class="fa fa-plus"></i>
+								<i class="fa fa-plus-circle"></i>
 							</button>
                     	</h2>
                     	<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
@@ -215,11 +219,11 @@
 			button.addEventListener('click', function() {
 				const icon = this.querySelector('.fa');
 				if (this.getAttribute('aria-expanded') === 'true') {
-				icon.classList.remove('fa-plus');
-				icon.classList.add('fa-minus');
+				icon.classList.remove('fa-plus-circle');
+				icon.classList.add('fa-minus-circle');
 				} else {
-				icon.classList.remove('fa-minus');
-				icon.classList.add('fa-plus');
+				icon.classList.remove('fa-minus-circle');
+				icon.classList.add('fa-plus-circle');
 				}
 			});
 		});
