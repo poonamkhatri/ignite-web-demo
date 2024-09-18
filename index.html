@@ -28,6 +28,176 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+  .container-benefit {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+	  margin-bottom:60px;
+    }
+
+    .benefit {
+      position: relative;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #f8f9fc, #dddfe2);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .benefit::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 10px solid transparent;
+      border-bottom-color: #0c0c0c;
+      border-right-color: #080808;
+      border-left-color: #111111;
+      transform:rotate(-320deg);
+      
+      box-sizing: border-box;
+    }
+
+    /* Arrow style */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: 320% -2%; /* Center rotation */
+      transform:translate(-50%, -50%) rotate(-90deg) translateY(20px);/* Angle to match the cut */
+      width: 10px;
+      height: 70px;
+      background-color: #2b3674;
+    }
+
+    /* Arrow tip */
+    .arrow::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #2b3674; /* Arrow tip color */
+    }
+
+    /* Gradient 1 specific styles */
+    .gradient1::before {
+      border-bottom-color: #2b3674;
+      border-right-color: #2b3674;
+      border-left-color: #2c4087;
+
+    }
+
+    .gradient2::before {
+      border-bottom-color: #006bf8;
+      border-right-color: #006bf8;
+      border-left-color: #006bf8;
+    }
+
+    .gradient3::before {
+      border-bottom-color: #04befa;
+      border-right-color: #04befa;
+      border-left-color: #04befa;
+    }
+
+    .gradient4::before {
+      border-bottom-color: #db02fd;
+      border-right-color: #db02fd;
+      border-left-color: #db02fd;
+    }
+
+    .gradient5::before {
+      border-bottom-color: #bb00fc;
+      border-right-color: #bb00fc;
+      border-left-color: #bb00fc;
+    }
+
+    .gradient6::before {
+      border-bottom-color: #8900c4;
+      border-right-color: #8900c4;
+      border-left-color: #8900c4;
+    }
+
+    .arrow1{
+      background-color: #2b3674;
+    }
+
+    .arrow1 ::after{
+      border-top: 10px solid #2b3674;
+    }
+
+    .arrow2{
+      background-color: #006bf8;
+    }
+
+    .arrow2 ::after{
+      border-top: 10px solid #006bf8;
+    }
+
+    .arrow3{
+      background-color: #04befa;
+    }
+    .arrow4{
+      background-color: #db02fd;
+    }
+    .arrow5{
+      background-color: #bb00fc;
+    }
+    .arrow6{
+      background-color: #8900c4;
+    }
+
+    .arrow1::after {
+  border-top: 10px solid #2b3674; /* Arrow tip color matches the arrow background */
+}
+
+.arrow2::after {
+  border-top: 10px solid #006bf8; /* Arrow tip color matches the arrow background */
+}
+
+.arrow3::after {
+  border-top: 10px solid #04befa; /* Arrow tip color matches the arrow background */
+}
+
+.arrow4::after {
+  border-top: 10px solid #db02fd; /* Arrow tip color matches the arrow background */
+}
+
+.arrow5::after {
+  border-top: 10px solid #bb00fc; /* Arrow tip color matches the arrow background */
+}
+
+.arrow6::after {
+  border-top: 10px solid #8900c4; /* Arrow tip color matches the arrow background */
+}
+
+.benefit img {
+  max-width: 200px; /* Adjust as needed */
+  max-height: 200px; /* Adjust as needed */
+  margin-bottom: 30px;
+  padding: 35px; /* Space between image and heading */
+}
+
+.benefit h2 {
+  font-size: 18px;
+  color: #6b6c6d;
+  margin: 0;
+  font-weight: 600; /* Remove margin to avoid extra space */
+}
+  
+  </style>
 </head>
 <body class="index-page">
 	<header id="header" class="header d-flex align-items-center fixed-top">
@@ -220,13 +390,52 @@
     <div class="container section-title" data-aos="fade-up">
     	<h2>Benefits</h2>
     </div><!-- End Section Title -->
-    <div class="container">
-		<div class="row justify-content-around gy-4">
-        	<div class="features-image col-lg-12 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            	<img src="assets/img/benefit.png" alt="">
-          	</div>
-		</div>
-	</div>
+   
+        	<div class="container-benefit">
+				<div class="benefit gradient1">
+				  <img src="assets/img/b1.png" alt="Placeholder Image">
+				 
+				  <div class="arrow arrow1"></div>
+				  <h2>Increases Motivation</h2><!-- Arrow applied here -->
+				</div>
+				
+				<div class="benefit gradient2">
+				  <img src="assets/img/b2.png" alt="Placeholder Image">
+				  <div class="arrow arrow2 arrowtop"></div>
+				  <h2>Improves Culture</h2>
+				</div>
+				<div class="benefit gradient3">
+				  <img src="assets/img/b3.png" alt="Placeholder Image">
+				  <div class="arrow arrow3"></div>
+				  <h2>Reduces Turnover</h2>
+				</div>
+				<div class="benefit gradient4">
+				  <img src="assets/img/b4.png" alt="Placeholder Image">
+				  <div class="arrow arrow4"></div>
+				  <h2>Increases Productivity</h2>
+				</div>
+				<div class="benefit gradient5">
+				  <img src="assets/img/b5.png" alt="Placeholder Image">
+				  <div class="arrow arrow5"></div>
+				  <h2>Encourages Teamwork</h2>
+				</div>
+				<div class="benefit gradient6">
+				  <img src="assets/img/b6.png" alt="Placeholder Image">
+				  <div class="arrow arrow6"></div>
+				  <h2>Increases Job Satisfaction</h2>
+				</div>
+				<div class="benefit gradient2">
+				  <img src="assets/img/b7.png" alt="Placeholder Image">
+				  <div class="arrow arrow2 arrowtop"></div>
+				  <h2>Boosts Morale</h2>
+				</div>
+				<div class="benefit gradient1">
+				  <img src="assets/img/b8.png" alt="Placeholder Image">
+				  
+				  <h2>Encourages Engagement</h2> <!-- Arrow applied here -->
+				</div>
+			  </div>
+	
 </section><!-- /More Features Section -->
 
 <section id="howitworks" class="services section">
