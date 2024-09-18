@@ -196,6 +196,41 @@
   margin: 0;
   font-weight: 600; /* Remove margin to avoid extra space */
 }
+.btn-watch-video1 {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 15px;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #2c4087, #006dfe);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-watch-video1 i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.btn-watch-video1:hover {
+  background: linear-gradient(135deg, #04befa, #04befa);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-watch-video1 span {
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+.btn-watch-video1:active {
+  transform: translateY(1px);
+}
+
   
   </style>
 </head>
@@ -445,10 +480,22 @@
 		<p>Get in touch with us! Whether you have questions, feedback, or inquiries about our services, our team is here to help.</p>
 	</div><!-- End Section Title -->
 	
-
 	
+		
+		<div class="container text-center">
+		  <div class="d-flex flex-column justify-content-center align-items-center">
+				
+			  <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+				  
+				  <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video1 d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+			  </div>
+				<img src="assets/img/video.png" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+		  </div>
+		</div>
+
 
 </section><!-- /Services Section -->
+
 
  <!-- Pricing Section -->
    <!-- Contact Section -->
